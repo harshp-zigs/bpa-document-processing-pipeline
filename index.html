@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turn Paperwork and Invoices Into Zero-Touch Digital Workflows</title>
+<meta name="description" content="See how invoices and paperwork move through capture, extraction, validation, matching, and approval so routine documents flow with no manual touch and exceptions reach a person.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://harshp-zigs.github.io/bpa-document-processing-pipeline/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Turn Paperwork and Invoices Into Zero-Touch Digital Workflows">
+<meta property="og:description" content="A practical guide to document capture, extraction, validation, matching, and exception handling.">
+<meta property="og:url" content="https://harshp-zigs.github.io/bpa-document-processing-pipeline/">
+<meta property="og:image" content="https://harshp-zigs.github.io/bpa-document-processing-pipeline/cross-department-bpa-production.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top-in">
+    <span class="logo"><b>[</b>doc<b>]</b> pipeline</span>
+    <nav aria-label="Primary">
+      <a href="#stages">Stages</a>
+      <a href="#match">Matching</a>
+      <a href="#exceptions">Exceptions</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article>
+  <div class="wrap head">
+    <p class="tag">// document automation</p>
+    <h1>Turn Paperwork and Invoices Into Zero-Touch Digital Workflows</h1>
+    <img class="hero" src="cross-department-bpa-production.jpg" alt="Cross-department business process automation for invoices and paperwork in production" fetchpriority="high">
+  </div>
+
+  <div class="wrap">
+    <div class="intro">
+      <p>Every finance, procurement, and operations team knows the pile: invoices in inboxes, forms in scans, approvals chasing people across departments. Each document is typed, checked, and forwarded by hand. The work is slow, repetitive, and a quiet source of errors.</p>
+      <p>Teams that fix this usually adopt <a href="https://zignuts.com/ai-services/ai-workflow-automation/intelligent-process-automation-services?utm_source=seo_web2.0&amp;utm_medium=backlink&amp;utm_campaign=seo_referral&amp;utm_id=11" target="_blank" rel="noopener">intelligent business process automation</a> to read documents, check them against business rules, and route them without anyone touching the routine ones.</p>
+      <p>The goal is not to remove people. It is to make sure people only see the documents that genuinely need judgment.</p>
+    </div>
+  </div>
+
+  <section class="wrap sec" id="doc">
+    <h2>What the machine sees</h2>
+    <p class="lede">A document becomes a set of fields, each with a confidence level. Confidence decides what happens next.</p>
+    <div class="demo" aria-label="Illustration of an invoice with extracted fields">
+      <div class="paper" aria-hidden="true">
+        <div class="ph"><span>INVOICE</span><i>no. ????</i></div>
+        <div class="line w60"></div><div class="line w40"></div>
+        <div class="grid3">
+          <div class="cell hi">Vendor</div><div class="cell hi">Date</div><div class="cell">PO ref</div>
+        </div>
+        <div class="line w80"></div><div class="line w70"></div><div class="line w50"></div>
+        <div class="total"><span>Total</span><b class="hi2">amount</b></div>
+      </div>
+      <ul class="fields">
+        <li><code>vendor</code><span>High confidence</span><i class="ok">auto</i></li>
+        <li><code>invoice_date</code><span>High confidence</span><i class="ok">auto</i></li>
+        <li><code>po_reference</code><span>Low confidence</span><i class="rv">review</i></li>
+        <li><code>total_amount</code><span>High confidence</span><i class="ok">auto</i></li>
+      </ul>
+    </div>
+    <p class="cap">Illustrative only. Real thresholds are set per field and tuned on your own documents.</p>
+  </section>
+
+  <section class="band" id="stages">
+    <div class="wrap">
+      <h2>Six stages from paper to posted</h2>
+      <ol class="stages">
+        <li><span class="n">01</span><div><h3>Capture</h3><p>Email, upload, scan, or portal. Every source lands in one queue with the original file stored.</p></div></li>
+        <li><span class="n">02</span><div><h3>Classify</h3><p>Is this an invoice, a purchase order, a receipt, or a form? The type picks the rules.</p></div></li>
+        <li><span class="n">03</span><div><h3>Extract</h3><p>Pull vendor, dates, line items, and totals as structured fields with confidence scores.</p></div></li>
+        <li><span class="n">04</span><div><h3>Validate</h3><p>Check formats, required fields, duplicates, and known vendors before anything moves on.</p></div></li>
+        <li><span class="n">05</span><div><h3>Match and route</h3><p>Compare against orders and receipts, then send to the right approver by amount and department.</p></div></li>
+        <li><span class="n">06</span><div><h3>Post and archive</h3><p>Write to the system of record and keep an audit trail linked to the source document.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="match">
+    <h2>Three-way matching, automated</h2>
+    <p class="lede">The most valuable rule in accounts payable is also the easiest to automate: agree the invoice with the order and the receipt.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th scope="col">Compare</th><th scope="col">Against</th><th scope="col">If it matches</th><th scope="col">If it does not</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Invoice lines</th><td>Purchase order lines</td><td>Continue</td><td>Flag price or quantity variance</td></tr>
+          <tr><th scope="row">Invoiced quantity</th><td>Goods or service receipt</td><td>Continue</td><td>Hold until receipt is recorded</td></tr>
+          <tr><th scope="row">Vendor and bank details</th><td>Vendor master record</td><td>Continue</td><td>Send to verification</td></tr>
+          <tr><th scope="row">Invoice number and amount</th><td>Previously processed items</td><td>Continue</td><td>Block as possible duplicate</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cap">Tolerances, such as an acceptable price difference, are business decisions. Set them with finance, not with the tool.</p>
+  </section>
+
+  <section class="band alt" id="exceptions">
+    <div class="wrap">
+      <h2>Exceptions are the design, not the afterthought</h2>
+      <p class="lede">Zero-touch applies to the routine path. A good system makes the unusual path fast for the person who handles it.</p>
+      <div class="three">
+        <div class="box"><h3>Low confidence</h3><p>Show the document beside the extracted field. The reviewer confirms or corrects in one click.</p></div>
+        <div class="box"><h3>Rule failure</h3><p>Say which rule failed and why, so the owner does not have to investigate.</p></div>
+        <div class="box"><h3>Learning loop</h3><p>Corrections feed back into rules and models, so the same exception is rarer next month.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="measure">
+    <h2>What to measure</h2>
+    <ul class="metrics">
+      <li><b>Straight-through rate</b><span>Share of documents posted with no human touch</span></li>
+      <li><b>Cycle time</b><span>From receipt to posting, by document type</span></li>
+      <li><b>Exception rate</b><span>Share routed to review, and the top causes</span></li>
+      <li><b>Correction rate</b><span>How often reviewers change extracted values</span></li>
+      <li><b>Duplicate catches</b><span>Items blocked before payment</span></li>
+    </ul>
+    <p class="cap">Capture a baseline before you automate, so improvement is shown with your own numbers.</p>
+  </section>
+
+  <section class="band" id="rollout">
+    <div class="wrap">
+      <h2>Rollout checklist</h2>
+      <ul class="checks">
+        <li>Start with one high-volume document type</li>
+        <li>Collect a representative sample, including messy scans</li>
+        <li>Agree match tolerances and approval limits with finance</li>
+        <li>Run in shadow mode and compare against manual results</li>
+        <li>Keep the original document linked to every posted record</li>
+        <li>Restrict who can change rules, vendors, and bank details</li>
+        <li>Review exceptions weekly and tune from real corrections</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="faq">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <details><summary>Does zero-touch mean no human involvement?</summary><p>No. It means routine documents pass with no manual handling, while exceptions go to a person with the context they need.</p></details>
+      <details><summary>Which documents should we automate first?</summary><p>Pick a high-volume, well-understood type such as supplier invoices. Clear rules and plentiful samples make early results measurable.</p></details>
+      <details><summary>How do we handle poor-quality scans?</summary><p>Low confidence sends the item to review. Better capture, such as clean uploads or e-invoicing, reduces these over time.</p></details>
+      <details><summary>How do we prevent duplicate or fraudulent invoices?</summary><p>Check invoice numbers, amounts, and vendors against processed items, and verify bank detail changes through a separate channel.</p></details>
+      <details><summary>Can it connect to our ERP?</summary><p>Usually yes, through an API or integration layer. Posting should be idempotent so a retry never creates a second entry.</p></details>
+    </div>
+  </section>
+</article>
+</main>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Ready to retire the paper pile?</h2>
+    <p>Talk to the team about automating invoices and paperwork across your departments.</p>
+    <a class="btn" href="https://zignuts.com/?utm_source=seo_web2.0&amp;utm_medium=backlink&amp;utm_campaign=seo_referral&amp;utm_id=11" target="_blank" rel="noopener">Visit zignuts.com</a>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>General guidance for finance and operations teams. Last reviewed 23 November 2026.</p>
+    <p><a href="#main">Back to top</a></p>
+  </div>
+</footer>
+</body>
+</html>

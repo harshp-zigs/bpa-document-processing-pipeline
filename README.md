@@ -4,7 +4,7 @@
 
 Every finance, procurement, and operations team knows the pile: invoices in inboxes, forms in scans, approvals chasing people across departments. Each document is typed, checked, and forwarded by hand. The work is slow, repetitive, and a quiet source of errors.
 
-Teams that fix this usually adopt [intelligent business process automation](https://zignuts.com/ai-services/ai-workflow-automation/intelligent-process-automation-services?utm_source=seo_web2.0&utm_medium=backlink&utm_campaign=seo_referral&utm_id=11) to read documents, check them against business rules, and route them without anyone touching the routine ones. Read the full guide online: https://harshp-zigs.github.io/bpa-document-processing-pipeline/
+Teams that fix this usually adopt [intelligent business process automation](https://zignuts.com/ai-services/ai-workflow-automation/business-process-automation-services?utm_source=seo_web2.0&utm_medium=backlink&utm_campaign=seo_referral&utm_id=11) to read documents, check them against business rules, and route them without anyone touching the routine ones. Read the full guide online: https://harshp-zigs.github.io/bpa-document-processing-pipeline/
 
 The goal is not to remove people. It is to make sure people only see the documents that genuinely need judgment.
 
